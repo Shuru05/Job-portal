@@ -1,0 +1,9 @@
+package com.JobBoard.demo.service;
+
+import com.JobBoard.demo.dto.Dto;
+
+public interface Service {
+
+	void insert(Dto dto);
+
+}

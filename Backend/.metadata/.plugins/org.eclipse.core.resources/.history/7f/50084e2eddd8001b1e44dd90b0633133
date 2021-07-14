@@ -1,0 +1,19 @@
+package com.JobBoard.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.JobBoard.demo.dto.Dto;
+import com.JobBoard.demo.service.Service;
+
+public class MyController {
+	@Autowired
+	Service s;
+	@RequestMapping(value="/insert",method=RequestMethod.POST)
+	public boolean insert(@RequestBody Dto dto) {
+		boolean flag=s.insert(dto);
+		return flag;
+	}
+}

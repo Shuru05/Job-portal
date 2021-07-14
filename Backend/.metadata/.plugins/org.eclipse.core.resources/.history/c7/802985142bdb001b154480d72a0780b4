@@ -1,0 +1,9 @@
+package com.JobBoard.demo.service;
+
+import com.JobBoard.demo.dto.Dto;
+
+public interface Service {
+
+	boolean insert(Dto dto);
+
+}

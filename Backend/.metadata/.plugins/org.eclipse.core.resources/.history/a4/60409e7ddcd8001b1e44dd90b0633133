@@ -1,0 +1,22 @@
+package com.JobBoard.demo.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.JobBoard.demo.dao.Dao;
+import com.JobBoard.demo.dto.Dto;
+import com.JobBoard.demo.model.User;
+import com.JobBoard.demo.service.Service;
+
+public class ServiceImpl implements Service{
+	@Autowired
+	Dao d;
+	@Override
+	public boolean insert(Dto dto) {
+		User u=new User();
+		u.setFname(dto.getFname());
+		u.setEmail(dto.getEmail());
+		u.setPass1(dto.getPass1());
+		return false;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.JobBoard.demo.dao.impl;
+
+public class DaoImpl implements Dao{
+
+}

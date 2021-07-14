@@ -1,0 +1,19 @@
+package com.JobBoard.demo.dao.impl;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.JobBoard.demo.dao.Dao;
+import com.JobBoard.demo.model.User;
+
+public class DaoImpl implements Dao{
+	@Autowired
+	EntityManager e;
+	@Override
+	public boolean insert(User u) {
+		e.persist(u);
+		return true;
+	}
+
+}

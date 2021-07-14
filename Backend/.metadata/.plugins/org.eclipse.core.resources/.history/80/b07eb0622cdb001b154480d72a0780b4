@@ -1,0 +1,13 @@
+package com.JobBoard.demo.dto;
+
+public class Dto1 {
+	private int jid;
+	private String email;
+	private String title;
+	private String location;
+	private String region;
+	private String type;
+	private String cname;
+	private String tagline;
+	private String website;
+}

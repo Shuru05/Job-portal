@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="top">
+<div ng-controller="registerCtrl">
+    <!-- <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+       -->
+  
+  <div class="site-wrap">
+  
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div> <!-- .site-mobile-menu -->
+      
+  
+      <!-- NAVBAR -->
+      <header class="site-navbar mt-3">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="site-logo col-6"><a href="#home">JobBoard</a></div>
+  
+            <nav class="mx-auto site-navigation">
+              <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a ng-href="#about">About</a></li>
+                <li class="has-children">
+                  <a href="#jobListing">Job Listings</a>
+                  <ul class="dropdown">
+                    <li><a href="#findJob">Find Jobs</a></li>
+                    <li><a href="#postJob">Post a Job</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="has-children">
+                  <a href="services.html">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="services.html">Resume Building</a></li>
+                    <li><a href="service-single.html">Cover Letter Writing</a></li>
+                    <li><a href="portfolio.html">Portfolio Building</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                  </ul>
+                </li> -->
+                <li><a ng-href="#contact">Contact</a></li>
+                <li class="d-lg-none"><a href="#postJob"><span class="mr-2">+</span> Post a Job</a></li>
+                <li class="d-lg-none"><a href="#login">Log In</a></li>
+              </ul>
+            </nav>
+            
+            <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+              <div class="ml-auto">
+                <a href="#postJob" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
+                <a href="#login" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              </div>
+              <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+            </div>
+  
+          </div>
+        </div>
+      </header>
+  
+      <!-- HOME -->
+      <section class="section-hero overlay inner-page bg-image" style="background-image: url('resources/assets/images/hero_1.jpg');" id="home-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1 class="text-white font-weight-bold">Admin Panel</h1>
+              <div class="custom-breadcrumbs">
+                <a href="#">Home</a> <span class="mx-2 slash">/</span>
+                <span class="text-white"><strong>Log In</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-5">
+              <h2 class="mb-4">Actions</h2>
+              <form action="#" class="p-4 border rounded">
+                <div>
+                  <input type="button" name="getList" class="btn btn-primary" value="Get User List" ng-onclick="getUser(user)">
+                </div>
+                <div>
+                   <input type="button" name="getListJob" class="btn btn-primary" value="Get Job List" ng-onclick="getJob(user)">
+                </div>
+                <div>
+                  <input type="text" name="id" class="from-control" ng-model="user.id" placeholder="Enter user Id to delete"/><br>
+                  <input type="button" name="Delete" class="btn btn-warning" value="Delete" ng-onclick="deleteUser(user)"/>
+                </div>
+                <div>
+                  <input type="text" name="id" class="from-control" ng-model="job.id" placeholder="Enter job Id to delete"/><br>
+                  <input type="button" name="Delete" class="btn btn-warning" value="Delete" ng-onclick="deleteJob(user)"/>
+                </div>
+    </div>  
+</div>  
+    </body>
+  </html>

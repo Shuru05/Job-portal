@@ -1,0 +1,36 @@
+package com.JobBoard.demo.service.impl;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.JobBoard.demo.dao.Dao;
+import com.JobBoard.demo.dto.Dto;
+import com.JobBoard.demo.model.Job;
+import com.JobBoard.demo.model.User;
+import com.JobBoard.demo.service.Service;
+@org.springframework.stereotype.Service
+@Transactional
+public class ServiceImpl implements Service{
+	@Autowired
+	Dao d;
+	@Override
+	public boolean insert(Dto dto) {
+		User u=new User();
+		u.setFname(dto.getFname());
+		u.setEmail(dto.getEmail());
+		u.setPass1(dto.getPass1());
+		u.setPass2(dto.getPass2());
+		u.setAddress(dto.getAddress());
+		u.setMobile(dto.getMobile());
+		u.setRole(dto.getRole());
+		boolean flag=d.insert(u);
+		return flag;
+	}
+	@Override
+	public boolean addJob(Job job) {
+		boolean flag1=d.addjob(job);
+		return flag1;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.JobBoard.demo.dao;
+
+public interface Dao {
+
+}

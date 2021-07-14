@@ -1,0 +1,6 @@
+package com.JobBoard.demo.dto;
+
+public class Dto1 {
+	private int id;
+	
+}
