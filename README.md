@@ -8,5 +8,8 @@ Requirement:
 5.spring boot
 6.mysql
 
+open mysql database and create database named jobportal.
 open the backend with any ide you like and run it.
-go to the folder containing index.html, and open cmd there and type http-server-o
+go to the folder containing index.html, and open cmd there and type http-server-o.
+this generates a link with port no.
+go to your favourite browser and paste the generated link.
